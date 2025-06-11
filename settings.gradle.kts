@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Login"
+rootProject.name = "android-basic"
 include(":app")
