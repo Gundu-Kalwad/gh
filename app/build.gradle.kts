@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.yourcompany.yourapp"
+    namespace = "com.pmk.login"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.yourcompany.yourapp"
-        minSdk = 29
+        applicationId = "com.pmk.login"
+        minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -35,8 +35,11 @@ android {
     }
 }
 
-dependencies {
+// Apply Google Services plugin
+apply(plugin = "com.google.gms.google-services")
 
+
+dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -45,4 +48,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Firebase Authentication
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+    // Firebase BOM for version management
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
+
+    // Firebase Authentication
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+    // Firebase BOM for version management
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
 }
+
+// Apply Google Services plugin
+apply(plugin = "com.google.gms.google-services")
