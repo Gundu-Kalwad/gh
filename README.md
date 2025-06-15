@@ -1,28 +1,16 @@
-# Flutter Gallery
+# pro_coding_studio
 
-**NOTE**: The Flutter Gallery is now deprecated, and no longer being active maintained.
+A new Flutter project.
 
-Flutter Gallery was a resource to help developers evaluate and use Flutter.
-It is now being used primarily for testing.
+## Getting Started
 
-We recommend Flutter developers check out the following resources:
+This project is a starting point for a Flutter application.
 
-* **Wonderous**
-([web demo](https://wonderous.app/web/),
-[App Store](https://apps.apple.com/us/app/wonderous/id1612491897),
-[Google Play](https://play.google.com/store/apps/details?id=com.gskinner.flutter.wonders),
-[source code](https://github.com/gskinnerTeam/flutter-wonderous-app)):<br>
-A Flutter app that showcases Flutter's support for elegant design and rich animations.
+A few resources to get you started if this is your first Flutter project:
 
-* **Material 3 Demo**
-([web demo](https://flutter.github.io/samples/web/material_3_demo/),
-[source code](https://github.com/flutter/samples/tree/main/material_3_demo)):<br>
-A Flutter app that showcases Material 3 features in the Flutter Material library.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-* **Flutter Samples**
-([samples](https://flutter.github.io/samples), [source code](https://github.com/flutter/samples)):<br>
-A collection of open source samples that illustrate best practices for Flutter.
-
-* **Widget catalogs**
-([Material](https://docs.flutter.dev/ui/widgets/material), [Cupertino](https://docs.flutter.dev/ui/widgets/cupertino)):<br>
-Catalogs for Material, Cupertino, and other widgets available for use in UI.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
