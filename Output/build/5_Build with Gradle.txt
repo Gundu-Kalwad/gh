@@ -1,0 +1,145 @@
+2025-06-14T17:41:17.7549612Z ##[group]Run ./gradlew build
+2025-06-14T17:41:17.7549903Z [36;1m./gradlew build[0m
+2025-06-14T17:41:17.7597419Z shell: /usr/bin/bash -e {0}
+2025-06-14T17:41:17.7597658Z env:
+2025-06-14T17:41:17.7597948Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7598404Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7598757Z ##[endgroup]
+2025-06-14T17:41:22.7503802Z 
+2025-06-14T17:41:22.7513450Z Welcome to Gradle 8.11.1!
+2025-06-14T17:41:22.7514066Z 
+2025-06-14T17:41:22.7514480Z Here are the highlights of this release:
+2025-06-14T17:41:22.7515508Z  - Parallel load and store for Configuration Cache
+2025-06-14T17:41:22.7516127Z  - Java compilation errors at the end of the build output
+2025-06-14T17:41:22.7516496Z  - Consolidated report for warnings and deprecations
+2025-06-14T17:41:22.7516706Z 
+2025-06-14T17:41:22.7517094Z For more details see https://docs.gradle.org/8.11.1/release-notes.html
+2025-06-14T17:41:22.7517584Z 
+2025-06-14T17:41:23.0487416Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-06-14T17:41:38.4548077Z > Task :app:preBuild UP-TO-DATE
+2025-06-14T17:41:38.4556531Z > Task :app:preDebugBuild UP-TO-DATE
+2025-06-14T17:41:38.4557315Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2025-06-14T17:41:38.4558203Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2025-06-14T17:41:38.9501019Z > Task :app:checkDebugAarMetadata
+2025-06-14T17:41:38.9501582Z > Task :app:generateDebugResValues
+2025-06-14T17:41:38.9507595Z > Task :app:mapDebugSourceSetPaths
+2025-06-14T17:41:39.0487044Z > Task :app:generateDebugResources
+2025-06-14T17:41:40.4488222Z > Task :app:packageDebugResources
+2025-06-14T17:41:42.0504838Z > Task :app:createDebugCompatibleScreenManifests
+2025-06-14T17:41:42.0508048Z > Task :app:extractDeepLinksDebug
+2025-06-14T17:41:42.0508784Z > Task :app:mergeDebugResources
+2025-06-14T17:41:42.1491323Z > Task :app:parseDebugLocalResources
+2025-06-14T17:41:42.3487050Z > Task :app:processDebugMainManifest
+2025-06-14T17:41:42.4487704Z > Task :app:processDebugManifest
+2025-06-14T17:41:42.4499306Z > Task :app:javaPreCompileDebug
+2025-06-14T17:41:42.4501626Z > Task :app:mergeDebugShaders
+2025-06-14T17:41:42.4502135Z > Task :app:compileDebugShaders NO-SOURCE
+2025-06-14T17:41:42.4502674Z > Task :app:processDebugManifestForPackage
+2025-06-14T17:41:42.7497484Z > Task :app:generateDebugAssets UP-TO-DATE
+2025-06-14T17:41:42.7507399Z > Task :app:mergeDebugAssets
+2025-06-14T17:41:42.7517960Z > Task :app:compressDebugAssets
+2025-06-14T17:41:42.9487325Z > Task :app:desugarDebugFileDependencies
+2025-06-14T17:41:42.9488278Z > Task :app:mergeDebugJniLibFolders
+2025-06-14T17:41:42.9492240Z > Task :app:checkDebugDuplicateClasses
+2025-06-14T17:41:42.9493257Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+2025-06-14T17:41:43.0491726Z > Task :app:stripDebugDebugSymbols NO-SOURCE
+2025-06-14T17:41:43.1487052Z > Task :app:mergeLibDexDebug
+2025-06-14T17:41:43.8486467Z > Task :app:processDebugResources
+2025-06-14T17:41:44.1516077Z > Task :app:validateSigningDebug
+2025-06-14T17:41:45.2497389Z > Task :app:writeDebugAppMetadata
+2025-06-14T17:41:45.3492300Z > Task :app:writeDebugSigningConfigVersions
+2025-06-14T17:41:45.3497086Z > Task :app:preReleaseBuild UP-TO-DATE
+2025-06-14T17:41:45.3501294Z > Task :app:mergeReleaseJniLibFolders
+2025-06-14T17:41:45.3506008Z > Task :app:mergeReleaseNativeLibs NO-SOURCE
+2025-06-14T17:41:45.3506877Z > Task :app:stripReleaseDebugSymbols NO-SOURCE
+2025-06-14T17:41:45.3507649Z > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+2025-06-14T17:41:45.3509040Z > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+2025-06-14T17:41:45.4526060Z > Task :app:checkReleaseDuplicateClasses
+2025-06-14T17:41:45.5513807Z > Task :app:buildKotlinToolingMetadata
+2025-06-14T17:41:45.5551592Z > Task :app:checkReleaseAarMetadata
+2025-06-14T17:41:45.5552260Z > Task :app:generateReleaseResValues
+2025-06-14T17:41:45.5552835Z > Task :app:mapReleaseSourceSetPaths
+2025-06-14T17:41:45.5553513Z > Task :app:generateReleaseResources
+2025-06-14T17:41:46.9500022Z > Task :app:packageReleaseResources
+2025-06-14T17:41:47.7506268Z > Task :app:parseReleaseLocalResources
+2025-06-14T17:41:47.7507230Z > Task :app:createReleaseCompatibleScreenManifests
+2025-06-14T17:41:47.7508043Z > Task :app:extractDeepLinksRelease
+2025-06-14T17:41:47.8560478Z > Task :app:mergeReleaseResources
+2025-06-14T17:41:47.9513815Z > Task :app:processReleaseMainManifest
+2025-06-14T17:41:47.9518155Z > Task :app:processReleaseManifest
+2025-06-14T17:41:47.9522061Z > Task :app:processReleaseManifestForPackage
+2025-06-14T17:41:48.0500222Z > Task :app:javaPreCompileRelease
+2025-06-14T17:41:48.0555817Z > Task :app:desugarReleaseFileDependencies
+2025-06-14T17:41:48.0556417Z > Task :app:mergeReleaseStartupProfile
+2025-06-14T17:41:49.4488360Z > Task :app:processReleaseResources
+2025-06-14T17:41:50.5509032Z > Task :app:mergeExtDexDebug
+2025-06-14T17:41:52.7489743Z > Task :app:mergeReleaseArtProfile
+2025-06-14T17:41:52.7490841Z > Task :app:mergeReleaseShaders
+2025-06-14T17:41:52.7491677Z > Task :app:compileReleaseShaders NO-SOURCE
+2025-06-14T17:41:52.7492475Z > Task :app:generateReleaseAssets UP-TO-DATE
+2025-06-14T17:41:52.7493198Z > Task :app:mergeReleaseAssets
+2025-06-14T17:41:52.8529703Z > Task :app:compressReleaseAssets
+2025-06-14T17:41:52.8530819Z > Task :app:mergeExtDexRelease
+2025-06-14T17:41:52.9528736Z > Task :app:extractReleaseVersionControlInfo
+2025-06-14T17:41:52.9575716Z > Task :app:extractProguardFiles
+2025-06-14T17:41:53.1487531Z > Task :app:collectReleaseDependencies
+2025-06-14T17:41:53.3486437Z > Task :app:sdkReleaseDependencyData
+2025-06-14T17:41:53.3487059Z > Task :app:writeReleaseAppMetadata
+2025-06-14T17:41:53.3487887Z > Task :app:writeReleaseSigningConfigVersions
+2025-06-14T17:41:53.3492651Z > Task :app:preDebugAndroidTestBuild SKIPPED
+2025-06-14T17:41:53.3493763Z > Task :app:generateDebugAndroidTestResValues
+2025-06-14T17:41:53.3494718Z > Task :app:preDebugUnitTestBuild UP-TO-DATE
+2025-06-14T17:41:53.3495763Z > Task :app:javaPreCompileDebugUnitTest
+2025-06-14T17:41:53.3555572Z > Task :app:preReleaseUnitTestBuild UP-TO-DATE
+2025-06-14T17:41:53.3556134Z > Task :app:javaPreCompileReleaseUnitTest
+2025-06-14T17:41:53.3575478Z > Task :app:optimizeReleaseResources
+2025-06-14T17:41:53.9531444Z 
+2025-06-14T17:41:53.9537027Z > Task :app:compileReleaseKotlin FAILED
+2025-06-14T17:41:53.9543942Z 
+2025-06-14T17:41:53.9565587Z > Task :app:compileDebugKotlin FAILED
+2025-06-14T17:41:53.9570420Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:6:16 Unresolved reference 'android'.
+2025-06-14T17:41:53.9575860Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:19:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9581159Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:20:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9586664Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:22:9 Unresolved reference 'buttonAdd'.
+2025-06-14T17:41:53.9589043Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:23:24 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9594272Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:27:17 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9596291Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:6:16 Unresolved reference 'android'.
+2025-06-14T17:41:53.9601488Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:19:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9636326Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:20:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9638562Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:22:9 Unresolved reference 'buttonAdd'.
+2025-06-14T17:41:53.9654265Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:23:24 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9668712Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:27:17 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9669664Z 
+2025-06-14T17:41:53.9669843Z FAILURE: Build completed with 2 failures.
+2025-06-14T17:41:53.9670148Z 
+2025-06-14T17:41:53.9670300Z 1: Task failed with an exception.
+2025-06-14T17:41:53.9670666Z -----------
+2025-06-14T17:41:53.9670943Z * What went wrong:
+2025-06-14T17:41:53.9671363Z Execution failed for task ':app:compileReleaseKotlin'.
+2025-06-14T17:41:53.9672532Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2025-06-14T17:41:53.9673690Z    > Compilation error. See log for more details
+2025-06-14T17:41:53.9674028Z 
+2025-06-14T17:41:53.9674144Z * Try:
+2025-06-14T17:41:53.9674538Z > Run with --stacktrace option to get the stack trace.
+2025-06-14T17:41:53.9675326Z > Run with --info or --debug option to get more log output.
+2025-06-14T17:41:54.0500634Z > Run with --scan to get full insights.
+2025-06-14T17:41:54.0572510Z > Get more help at https://help.gradle.org.
+2025-06-14T17:41:54.0573093Z ==============================================================================
+2025-06-14T17:41:54.0573459Z 
+2025-06-14T17:41:54.0573617Z 2: Task failed with an exception.
+2025-06-14T17:41:54.0574018Z -----------
+2025-06-14T17:41:54.0574314Z * What went wrong:
+2025-06-14T17:41:54.0574736Z Execution failed for task ':app:compileDebugKotlin'.
+2025-06-14T17:41:54.0579686Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2025-06-14T17:41:54.0580825Z    > Compilation error. See log for more details
+2025-06-14T17:41:54.0581161Z 
+2025-06-14T17:41:54.0581275Z * Try:
+2025-06-14T17:41:54.0581633Z > Run with --stacktrace option to get the stack trace.
+2025-06-14T17:41:54.0582252Z > Run with --info or --debug option to get more log output.
+2025-06-14T17:41:54.0582793Z > Run with --scan to get full insights.
+2025-06-14T17:41:54.0583268Z > Get more help at https://help.gradle.org.
+2025-06-14T17:41:54.0583852Z ==============================================================================
+2025-06-14T17:41:54.0584179Z 
+2025-06-14T17:41:54.0584307Z BUILD FAILED in 33s
+2025-06-14T17:41:54.0584678Z 61 actionable tasks: 61 executed
+2025-06-14T17:41:54.5762288Z ##[error]Process completed with exit code 1.

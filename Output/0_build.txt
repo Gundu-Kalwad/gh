@@ -1,0 +1,452 @@
+2025-06-14T17:41:05.5856617Z Current runner version: '2.325.0'
+2025-06-14T17:41:05.5878931Z ##[group]Runner Image Provisioner
+2025-06-14T17:41:05.5879739Z Hosted Compute Agent
+2025-06-14T17:41:05.5880314Z Version: 20250529.345
+2025-06-14T17:41:05.5880956Z Commit: 22237e57af968c281070ffa8ed912c1b754f9a23
+2025-06-14T17:41:05.5881599Z Build Date: 2025-05-29T20:18:30Z
+2025-06-14T17:41:05.5882220Z ##[endgroup]
+2025-06-14T17:41:05.5882751Z ##[group]Operating System
+2025-06-14T17:41:05.5883310Z Ubuntu
+2025-06-14T17:41:05.5883729Z 24.04.2
+2025-06-14T17:41:05.5884239Z LTS
+2025-06-14T17:41:05.5884736Z ##[endgroup]
+2025-06-14T17:41:05.5885701Z ##[group]Runner Image
+2025-06-14T17:41:05.5886317Z Image: ubuntu-24.04
+2025-06-14T17:41:05.5886781Z Version: 20250602.3.0
+2025-06-14T17:41:05.5887823Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250602.3/images/ubuntu/Ubuntu2404-Readme.md
+2025-06-14T17:41:05.5889348Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250602.3
+2025-06-14T17:41:05.5890364Z ##[endgroup]
+2025-06-14T17:41:05.5891405Z ##[group]GITHUB_TOKEN Permissions
+2025-06-14T17:41:05.5893639Z Contents: read
+2025-06-14T17:41:05.5894202Z Metadata: read
+2025-06-14T17:41:05.5894657Z Packages: read
+2025-06-14T17:41:05.5895509Z ##[endgroup]
+2025-06-14T17:41:05.5897880Z Secret source: Actions
+2025-06-14T17:41:05.5898565Z Prepare workflow directory
+2025-06-14T17:41:05.6231347Z Prepare all required actions
+2025-06-14T17:41:05.6270742Z Getting action download info
+2025-06-14T17:41:05.9807497Z ##[group]Download immutable action package 'actions/checkout@v3'
+2025-06-14T17:41:05.9808610Z Version: 3.6.0
+2025-06-14T17:41:05.9809621Z Digest: sha256:942562b9c7d4b1f2557f1da21f4d3eb4eb4fd01f2ad78b2a6e187d1b193e0a0f
+2025-06-14T17:41:05.9810806Z Source commit SHA: f43a0e5ff2bd294095638e18286ca9a3d1956744
+2025-06-14T17:41:05.9811489Z ##[endgroup]
+2025-06-14T17:41:06.1585593Z ##[group]Download immutable action package 'actions/setup-java@v3'
+2025-06-14T17:41:06.1586480Z Version: 3.14.1
+2025-06-14T17:41:06.1587211Z Digest: sha256:0f5994bd85f236d7525048fec5b0b7b3ec7474ec50184c8f78a320717cfb3d51
+2025-06-14T17:41:06.1588182Z Source commit SHA: 17f84c3641ba7b8f6deff6309fc4c864478f5d62
+2025-06-14T17:41:06.1588820Z ##[endgroup]
+2025-06-14T17:41:06.4049208Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-06-14T17:41:06.4050066Z Version: 4.6.2
+2025-06-14T17:41:06.4050777Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-06-14T17:41:06.4051828Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-06-14T17:41:06.4052483Z ##[endgroup]
+2025-06-14T17:41:06.6027568Z Complete job name: build
+2025-06-14T17:41:06.6685922Z ##[group]Run actions/checkout@v3
+2025-06-14T17:41:06.6686951Z with:
+2025-06-14T17:41:06.6687364Z   repository: Gundu-Kalwad/gh
+2025-06-14T17:41:06.6687984Z   token: ***
+2025-06-14T17:41:06.6688365Z   ssh-strict: true
+2025-06-14T17:41:06.6688773Z   persist-credentials: true
+2025-06-14T17:41:06.6689216Z   clean: true
+2025-06-14T17:41:06.6689633Z   sparse-checkout-cone-mode: true
+2025-06-14T17:41:06.6690120Z   fetch-depth: 1
+2025-06-14T17:41:06.6690505Z   fetch-tags: false
+2025-06-14T17:41:06.6690888Z   lfs: false
+2025-06-14T17:41:06.6691263Z   submodules: false
+2025-06-14T17:41:06.6691661Z   set-safe-directory: true
+2025-06-14T17:41:06.6692366Z ##[endgroup]
+2025-06-14T17:41:06.7520012Z Syncing repository: Gundu-Kalwad/gh
+2025-06-14T17:41:06.7521687Z ##[group]Getting Git version info
+2025-06-14T17:41:06.7522442Z Working directory is '/home/runner/work/gh/gh'
+2025-06-14T17:41:06.7523324Z [command]/usr/bin/git version
+2025-06-14T17:41:06.7662801Z git version 2.49.0
+2025-06-14T17:41:06.7689092Z ##[endgroup]
+2025-06-14T17:41:06.7703123Z Temporarily overriding HOME='/home/runner/work/_temp/eaa2e247-23f5-4b19-a307-aa796765c273' before making global git config changes
+2025-06-14T17:41:06.7704577Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-14T17:41:06.7706402Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh/gh
+2025-06-14T17:41:06.7744473Z Deleting the contents of '/home/runner/work/gh/gh'
+2025-06-14T17:41:06.7748414Z ##[group]Initializing the repository
+2025-06-14T17:41:06.7750936Z [command]/usr/bin/git init /home/runner/work/gh/gh
+2025-06-14T17:41:06.7853157Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-06-14T17:41:06.7854277Z hint: is subject to change. To configure the initial branch name to use in all
+2025-06-14T17:41:06.7855436Z hint: of your new repositories, which will suppress this warning, call:
+2025-06-14T17:41:06.7856108Z hint:
+2025-06-14T17:41:06.7856623Z hint: 	git config --global init.defaultBranch <name>
+2025-06-14T17:41:06.7857188Z hint:
+2025-06-14T17:41:06.7857960Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-06-14T17:41:06.7858830Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-06-14T17:41:06.7859513Z hint:
+2025-06-14T17:41:06.7859887Z hint: 	git branch -m <name>
+2025-06-14T17:41:06.7865111Z Initialized empty Git repository in /home/runner/work/gh/gh/.git/
+2025-06-14T17:41:06.7873911Z [command]/usr/bin/git remote add origin https://github.com/Gundu-Kalwad/gh
+2025-06-14T17:41:06.7907920Z ##[endgroup]
+2025-06-14T17:41:06.7908621Z ##[group]Disabling automatic garbage collection
+2025-06-14T17:41:06.7910538Z [command]/usr/bin/git config --local gc.auto 0
+2025-06-14T17:41:06.7936446Z ##[endgroup]
+2025-06-14T17:41:06.7937115Z ##[group]Setting up auth
+2025-06-14T17:41:06.7941606Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-14T17:41:06.7967416Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-14T17:41:06.8330108Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-14T17:41:06.8354860Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-14T17:41:06.8566709Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-06-14T17:41:06.8597383Z ##[endgroup]
+2025-06-14T17:41:06.8604596Z ##[group]Fetching the repository
+2025-06-14T17:41:06.8606191Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +b2babb829b39ac182d165554c0feba048150bf98:refs/remotes/origin/main
+2025-06-14T17:41:07.1923736Z remote: Enumerating objects: 75, done.        
+2025-06-14T17:41:07.1925845Z remote: Counting objects:   1% (1/75)        
+2025-06-14T17:41:07.1927661Z remote: Counting objects:   2% (2/75)        
+2025-06-14T17:41:07.1929182Z remote: Counting objects:   4% (3/75)        
+2025-06-14T17:41:07.1930370Z remote: Counting objects:   5% (4/75)        
+2025-06-14T17:41:07.1931657Z remote: Counting objects:   6% (5/75)        
+2025-06-14T17:41:07.1932523Z remote: Counting objects:   8% (6/75)        
+2025-06-14T17:41:07.1933351Z remote: Counting objects:   9% (7/75)        
+2025-06-14T17:41:07.1934168Z remote: Counting objects:  10% (8/75)        
+2025-06-14T17:41:07.1935148Z remote: Counting objects:  12% (9/75)        
+2025-06-14T17:41:07.1935986Z remote: Counting objects:  13% (10/75)        
+2025-06-14T17:41:07.1937331Z remote: Counting objects:  14% (11/75)        
+2025-06-14T17:41:07.1938254Z remote: Counting objects:  16% (12/75)        
+2025-06-14T17:41:07.1939202Z remote: Counting objects:  17% (13/75)        
+2025-06-14T17:41:07.1940163Z remote: Counting objects:  18% (14/75)        
+2025-06-14T17:41:07.1941117Z remote: Counting objects:  20% (15/75)        
+2025-06-14T17:41:07.1942060Z remote: Counting objects:  21% (16/75)        
+2025-06-14T17:41:07.1943007Z remote: Counting objects:  22% (17/75)        
+2025-06-14T17:41:07.1943996Z remote: Counting objects:  24% (18/75)        
+2025-06-14T17:41:07.1945358Z remote: Counting objects:  25% (19/75)        
+2025-06-14T17:41:07.1946336Z remote: Counting objects:  26% (20/75)        
+2025-06-14T17:41:07.1947319Z remote: Counting objects:  28% (21/75)        
+2025-06-14T17:41:07.1948296Z remote: Counting objects:  29% (22/75)        
+2025-06-14T17:41:07.1949276Z remote: Counting objects:  30% (23/75)        
+2025-06-14T17:41:07.1950261Z remote: Counting objects:  32% (24/75)        
+2025-06-14T17:41:07.1951219Z remote: Counting objects:  33% (25/75)        
+2025-06-14T17:41:07.1952293Z remote: Counting objects:  34% (26/75)        
+2025-06-14T17:41:07.1953485Z remote: Counting objects:  36% (27/75)        
+2025-06-14T17:41:07.1954700Z remote: Counting objects:  37% (28/75)        
+2025-06-14T17:41:07.1956745Z remote: Counting objects:  38% (29/75)        
+2025-06-14T17:41:07.1958889Z remote: Counting objects:  40% (30/75)        
+2025-06-14T17:41:07.1960911Z remote: Counting objects:  41% (31/75)        
+2025-06-14T17:41:07.1962208Z remote: Counting objects:  42% (32/75)        
+2025-06-14T17:41:07.1963411Z remote: Counting objects:  44% (33/75)        
+2025-06-14T17:41:07.1964607Z remote: Counting objects:  45% (34/75)        
+2025-06-14T17:41:07.1966044Z remote: Counting objects:  46% (35/75)        
+2025-06-14T17:41:07.1967264Z remote: Counting objects:  48% (36/75)        
+2025-06-14T17:41:07.1968485Z remote: Counting objects:  49% (37/75)        
+2025-06-14T17:41:07.1969707Z remote: Counting objects:  50% (38/75)        
+2025-06-14T17:41:07.1970932Z remote: Counting objects:  52% (39/75)        
+2025-06-14T17:41:07.1972152Z remote: Counting objects:  53% (40/75)        
+2025-06-14T17:41:07.1973405Z remote: Counting objects:  54% (41/75)        
+2025-06-14T17:41:07.1974695Z remote: Counting objects:  56% (42/75)        
+2025-06-14T17:41:07.1976166Z remote: Counting objects:  57% (43/75)        
+2025-06-14T17:41:07.1977496Z remote: Counting objects:  58% (44/75)        
+2025-06-14T17:41:07.1978815Z remote: Counting objects:  60% (45/75)        
+2025-06-14T17:41:07.1980218Z remote: Counting objects:  61% (46/75)        
+2025-06-14T17:41:07.1981541Z remote: Counting objects:  62% (47/75)        
+2025-06-14T17:41:07.1982848Z remote: Counting objects:  64% (48/75)        
+2025-06-14T17:41:07.1984186Z remote: Counting objects:  65% (49/75)        
+2025-06-14T17:41:07.1985641Z remote: Counting objects:  66% (50/75)        
+2025-06-14T17:41:07.1986972Z remote: Counting objects:  68% (51/75)        
+2025-06-14T17:41:07.1988267Z remote: Counting objects:  69% (52/75)        
+2025-06-14T17:41:07.1989538Z remote: Counting objects:  70% (53/75)        
+2025-06-14T17:41:07.1990985Z remote: Counting objects:  72% (54/75)        
+2025-06-14T17:41:07.1992272Z remote: Counting objects:  73% (55/75)        
+2025-06-14T17:41:07.1993548Z remote: Counting objects:  74% (56/75)        
+2025-06-14T17:41:07.1994805Z remote: Counting objects:  76% (57/75)        
+2025-06-14T17:41:07.1996181Z remote: Counting objects:  77% (58/75)        
+2025-06-14T17:41:07.1997444Z remote: Counting objects:  78% (59/75)        
+2025-06-14T17:41:07.1998693Z remote: Counting objects:  80% (60/75)        
+2025-06-14T17:41:07.1999937Z remote: Counting objects:  81% (61/75)        
+2025-06-14T17:41:07.2001174Z remote: Counting objects:  82% (62/75)        
+2025-06-14T17:41:07.2002411Z remote: Counting objects:  84% (63/75)        
+2025-06-14T17:41:07.2003665Z remote: Counting objects:  85% (64/75)        
+2025-06-14T17:41:07.2005011Z remote: Counting objects:  86% (65/75)        
+2025-06-14T17:41:07.2006244Z remote: Counting objects:  88% (66/75)        
+2025-06-14T17:41:07.2007493Z remote: Counting objects:  89% (67/75)        
+2025-06-14T17:41:07.2008739Z remote: Counting objects:  90% (68/75)        
+2025-06-14T17:41:07.2009967Z remote: Counting objects:  92% (69/75)        
+2025-06-14T17:41:07.2011195Z remote: Counting objects:  93% (70/75)        
+2025-06-14T17:41:07.2012417Z remote: Counting objects:  94% (71/75)        
+2025-06-14T17:41:07.2013639Z remote: Counting objects:  96% (72/75)        
+2025-06-14T17:41:07.2015085Z remote: Counting objects:  97% (73/75)        
+2025-06-14T17:41:07.2016314Z remote: Counting objects:  98% (74/75)        
+2025-06-14T17:41:07.2017573Z remote: Counting objects: 100% (75/75)        
+2025-06-14T17:41:07.2018901Z remote: Counting objects: 100% (75/75), done.        
+2025-06-14T17:41:07.2020289Z remote: Compressing objects:   1% (1/59)        
+2025-06-14T17:41:07.2021604Z remote: Compressing objects:   3% (2/59)        
+2025-06-14T17:41:07.2022928Z remote: Compressing objects:   5% (3/59)        
+2025-06-14T17:41:07.2024231Z remote: Compressing objects:   6% (4/59)        
+2025-06-14T17:41:07.2025647Z remote: Compressing objects:   8% (5/59)        
+2025-06-14T17:41:07.2026964Z remote: Compressing objects:  10% (6/59)        
+2025-06-14T17:41:07.2028274Z remote: Compressing objects:  11% (7/59)        
+2025-06-14T17:41:07.2029565Z remote: Compressing objects:  13% (8/59)        
+2025-06-14T17:41:07.2030842Z remote: Compressing objects:  15% (9/59)        
+2025-06-14T17:41:07.2032180Z remote: Compressing objects:  16% (10/59)        
+2025-06-14T17:41:07.2033475Z remote: Compressing objects:  18% (11/59)        
+2025-06-14T17:41:07.2034775Z remote: Compressing objects:  20% (12/59)        
+2025-06-14T17:41:07.2036192Z remote: Compressing objects:  22% (13/59)        
+2025-06-14T17:41:07.2037483Z remote: Compressing objects:  23% (14/59)        
+2025-06-14T17:41:07.2038776Z remote: Compressing objects:  25% (15/59)        
+2025-06-14T17:41:07.2040095Z remote: Compressing objects:  27% (16/59)        
+2025-06-14T17:41:07.2041418Z remote: Compressing objects:  28% (17/59)        
+2025-06-14T17:41:07.2042737Z remote: Compressing objects:  30% (18/59)        
+2025-06-14T17:41:07.2044058Z remote: Compressing objects:  32% (19/59)        
+2025-06-14T17:41:07.2045451Z remote: Compressing objects:  33% (20/59)        
+2025-06-14T17:41:07.2046757Z remote: Compressing objects:  35% (21/59)        
+2025-06-14T17:41:07.2048066Z remote: Compressing objects:  37% (22/59)        
+2025-06-14T17:41:07.2049366Z remote: Compressing objects:  38% (23/59)        
+2025-06-14T17:41:07.2050669Z remote: Compressing objects:  40% (24/59)        
+2025-06-14T17:41:07.2051959Z remote: Compressing objects:  42% (25/59)        
+2025-06-14T17:41:07.2053249Z remote: Compressing objects:  44% (26/59)        
+2025-06-14T17:41:07.2054512Z remote: Compressing objects:  45% (27/59)        
+2025-06-14T17:41:07.2055881Z remote: Compressing objects:  47% (28/59)        
+2025-06-14T17:41:07.2077699Z remote: Compressing objects:  49% (29/59)        
+2025-06-14T17:41:07.2080842Z remote: Compressing objects:  50% (30/59)        
+2025-06-14T17:41:07.2084009Z remote: Compressing objects:  52% (31/59)        
+2025-06-14T17:41:07.2085754Z remote: Compressing objects:  54% (32/59)        
+2025-06-14T17:41:07.2087027Z remote: Compressing objects:  55% (33/59)        
+2025-06-14T17:41:07.2088291Z remote: Compressing objects:  57% (34/59)        
+2025-06-14T17:41:07.2089556Z remote: Compressing objects:  59% (35/59)        
+2025-06-14T17:41:07.2090828Z remote: Compressing objects:  61% (36/59)        
+2025-06-14T17:41:07.2092076Z remote: Compressing objects:  62% (37/59)        
+2025-06-14T17:41:07.2093344Z remote: Compressing objects:  64% (38/59)        
+2025-06-14T17:41:07.2094595Z remote: Compressing objects:  66% (39/59)        
+2025-06-14T17:41:07.2095970Z remote: Compressing objects:  67% (40/59)        
+2025-06-14T17:41:07.2097267Z remote: Compressing objects:  69% (41/59)        
+2025-06-14T17:41:07.2098549Z remote: Compressing objects:  71% (42/59)        
+2025-06-14T17:41:07.2099819Z remote: Compressing objects:  72% (43/59)        
+2025-06-14T17:41:07.2101092Z remote: Compressing objects:  74% (44/59)        
+2025-06-14T17:41:07.2102345Z remote: Compressing objects:  76% (45/59)        
+2025-06-14T17:41:07.2103611Z remote: Compressing objects:  77% (46/59)        
+2025-06-14T17:41:07.2104978Z remote: Compressing objects:  79% (47/59)        
+2025-06-14T17:41:07.2106253Z remote: Compressing objects:  81% (48/59)        
+2025-06-14T17:41:07.2107693Z remote: Compressing objects:  83% (49/59)        
+2025-06-14T17:41:07.2108965Z remote: Compressing objects:  84% (50/59)        
+2025-06-14T17:41:07.2110219Z remote: Compressing objects:  86% (51/59)        
+2025-06-14T17:41:07.2111848Z remote: Compressing objects:  88% (52/59)        
+2025-06-14T17:41:07.2113223Z remote: Compressing objects:  89% (53/59)        
+2025-06-14T17:41:07.2114488Z remote: Compressing objects:  91% (54/59)        
+2025-06-14T17:41:07.2116347Z remote: Compressing objects:  93% (55/59)        
+2025-06-14T17:41:07.2117646Z remote: Compressing objects:  94% (56/59)        
+2025-06-14T17:41:07.2118901Z remote: Compressing objects:  96% (57/59)        
+2025-06-14T17:41:07.2120154Z remote: Compressing objects:  98% (58/59)        
+2025-06-14T17:41:07.2121400Z remote: Compressing objects: 100% (59/59)        
+2025-06-14T17:41:07.2122740Z remote: Compressing objects: 100% (59/59), done.        
+2025-06-14T17:41:07.2240340Z remote: Total 75 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)        
+2025-06-14T17:41:07.2318821Z From https://github.com/Gundu-Kalwad/gh
+2025-06-14T17:41:07.2320411Z  * [new ref]         b2babb829b39ac182d165554c0feba048150bf98 -> origin/main
+2025-06-14T17:41:07.2352148Z ##[endgroup]
+2025-06-14T17:41:07.2354381Z ##[group]Determining the checkout info
+2025-06-14T17:41:07.2357034Z ##[endgroup]
+2025-06-14T17:41:07.2359125Z ##[group]Checking out the ref
+2025-06-14T17:41:07.2361630Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-06-14T17:41:07.2449580Z Switched to a new branch 'main'
+2025-06-14T17:41:07.2452351Z branch 'main' set up to track 'origin/main'.
+2025-06-14T17:41:07.2460521Z ##[endgroup]
+2025-06-14T17:41:07.2488732Z [command]/usr/bin/git log -1 --format='%H'
+2025-06-14T17:41:07.2509635Z 'b2babb829b39ac182d165554c0feba048150bf98'
+2025-06-14T17:41:07.2816858Z ##[group]Run actions/setup-java@v3
+2025-06-14T17:41:07.2817820Z with:
+2025-06-14T17:41:07.2818457Z   java-version: 17
+2025-06-14T17:41:07.2819208Z   distribution: temurin
+2025-06-14T17:41:07.2819979Z   cache: gradle
+2025-06-14T17:41:07.2820687Z   java-package: jdk
+2025-06-14T17:41:07.2821420Z   check-latest: false
+2025-06-14T17:41:07.2822159Z   server-id: github
+2025-06-14T17:41:07.2822911Z   server-username: GITHUB_ACTOR
+2025-06-14T17:41:07.2823816Z   server-password: GITHUB_TOKEN
+2025-06-14T17:41:07.2824724Z   overwrite-settings: true
+2025-06-14T17:41:07.2825905Z   job-status: success
+2025-06-14T17:41:07.2826920Z   token: ***
+2025-06-14T17:41:07.2827583Z ##[endgroup]
+2025-06-14T17:41:07.4775554Z ##[group]Installed distributions
+2025-06-14T17:41:07.5835511Z Resolved Java 17.0.15+6 from tool-cache
+2025-06-14T17:41:07.5836000Z Setting Java 17.0.15+6 as the default
+2025-06-14T17:41:07.5849389Z Creating toolchains.xml for JDK version 17 from temurin
+2025-06-14T17:41:07.5928220Z Writing to /home/runner/.m2/toolchains.xml
+2025-06-14T17:41:07.5929054Z 
+2025-06-14T17:41:07.5929849Z Java configuration:
+2025-06-14T17:41:07.5930590Z   Distribution: temurin
+2025-06-14T17:41:07.5931220Z   Version: 17.0.15+6
+2025-06-14T17:41:07.5932332Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:07.5933197Z 
+2025-06-14T17:41:07.5934665Z ##[endgroup]
+2025-06-14T17:41:07.5948991Z Creating settings.xml with server-id: github
+2025-06-14T17:41:07.5960957Z Writing to /home/runner/.m2/settings.xml
+2025-06-14T17:41:07.8626980Z Cache hit for: setup-java-Linux-gradle-94079c63f35cc995f392cdbc39a9b9ab26c96784abbd8964a13f8749c9152307
+2025-06-14T17:41:09.1724335Z Received 67108864 of 724275157 (9.3%), 63.9 MBs/sec
+2025-06-14T17:41:10.1724359Z Received 134217728 of 724275157 (18.5%), 64.0 MBs/sec
+2025-06-14T17:41:11.1732153Z Received 264241152 of 724275157 (36.5%), 83.9 MBs/sec
+2025-06-14T17:41:12.1730692Z Received 356515840 of 724275157 (49.2%), 85.0 MBs/sec
+2025-06-14T17:41:13.1731228Z Received 469762048 of 724275157 (64.9%), 89.6 MBs/sec
+2025-06-14T17:41:14.1749889Z Received 637534208 of 724275157 (88.0%), 101.3 MBs/sec
+2025-06-14T17:41:15.1563519Z Received 724275157 of 724275157 (100.0%), 98.9 MBs/sec
+2025-06-14T17:41:15.1564618Z Cache Size: ~691 MB (724275157 B)
+2025-06-14T17:41:15.1696238Z [command]/usr/bin/tar -xf /home/runner/work/_temp/7f7fe4a6-4745-4a8a-a085-88ffc9beb87c/cache.tzst -P -C /home/runner/work/gh/gh --use-compress-program unzstd
+2025-06-14T17:41:17.4956328Z Cache restored successfully
+2025-06-14T17:41:17.7168488Z Cache restored from key: setup-java-Linux-gradle-94079c63f35cc995f392cdbc39a9b9ab26c96784abbd8964a13f8749c9152307
+2025-06-14T17:41:17.7346471Z ##[group]Run chmod +x gradlew
+2025-06-14T17:41:17.7346803Z [36;1mchmod +x gradlew[0m
+2025-06-14T17:41:17.7416200Z shell: /usr/bin/bash -e {0}
+2025-06-14T17:41:17.7416471Z env:
+2025-06-14T17:41:17.7416771Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7417226Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7417593Z ##[endgroup]
+2025-06-14T17:41:17.7549623Z ##[group]Run ./gradlew build
+2025-06-14T17:41:17.7549907Z [36;1m./gradlew build[0m
+2025-06-14T17:41:17.7597426Z shell: /usr/bin/bash -e {0}
+2025-06-14T17:41:17.7597661Z env:
+2025-06-14T17:41:17.7597952Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7598407Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.15-6/x64
+2025-06-14T17:41:17.7598760Z ##[endgroup]
+2025-06-14T17:41:22.7503851Z 
+2025-06-14T17:41:22.7513466Z Welcome to Gradle 8.11.1!
+2025-06-14T17:41:22.7514073Z 
+2025-06-14T17:41:22.7514487Z Here are the highlights of this release:
+2025-06-14T17:41:22.7515523Z  - Parallel load and store for Configuration Cache
+2025-06-14T17:41:22.7516132Z  - Java compilation errors at the end of the build output
+2025-06-14T17:41:22.7516499Z  - Consolidated report for warnings and deprecations
+2025-06-14T17:41:22.7516709Z 
+2025-06-14T17:41:22.7517099Z For more details see https://docs.gradle.org/8.11.1/release-notes.html
+2025-06-14T17:41:22.7517680Z 
+2025-06-14T17:41:23.0487464Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-06-14T17:41:38.4548229Z > Task :app:preBuild UP-TO-DATE
+2025-06-14T17:41:38.4556542Z > Task :app:preDebugBuild UP-TO-DATE
+2025-06-14T17:41:38.4557322Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2025-06-14T17:41:38.4558208Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2025-06-14T17:41:38.9501066Z > Task :app:checkDebugAarMetadata
+2025-06-14T17:41:38.9501587Z > Task :app:generateDebugResValues
+2025-06-14T17:41:38.9507610Z > Task :app:mapDebugSourceSetPaths
+2025-06-14T17:41:39.0487092Z > Task :app:generateDebugResources
+2025-06-14T17:41:40.4488271Z > Task :app:packageDebugResources
+2025-06-14T17:41:42.0505062Z > Task :app:createDebugCompatibleScreenManifests
+2025-06-14T17:41:42.0508061Z > Task :app:extractDeepLinksDebug
+2025-06-14T17:41:42.0508797Z > Task :app:mergeDebugResources
+2025-06-14T17:41:42.1491360Z > Task :app:parseDebugLocalResources
+2025-06-14T17:41:42.3487122Z > Task :app:processDebugMainManifest
+2025-06-14T17:41:42.4487757Z > Task :app:processDebugManifest
+2025-06-14T17:41:42.4499328Z > Task :app:javaPreCompileDebug
+2025-06-14T17:41:42.4501637Z > Task :app:mergeDebugShaders
+2025-06-14T17:41:42.4502141Z > Task :app:compileDebugShaders NO-SOURCE
+2025-06-14T17:41:42.4502681Z > Task :app:processDebugManifestForPackage
+2025-06-14T17:41:42.7497528Z > Task :app:generateDebugAssets UP-TO-DATE
+2025-06-14T17:41:42.7507424Z > Task :app:mergeDebugAssets
+2025-06-14T17:41:42.7517976Z > Task :app:compressDebugAssets
+2025-06-14T17:41:42.9487373Z > Task :app:desugarDebugFileDependencies
+2025-06-14T17:41:42.9488283Z > Task :app:mergeDebugJniLibFolders
+2025-06-14T17:41:42.9492258Z > Task :app:checkDebugDuplicateClasses
+2025-06-14T17:41:42.9493262Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+2025-06-14T17:41:43.0491776Z > Task :app:stripDebugDebugSymbols NO-SOURCE
+2025-06-14T17:41:43.1487087Z > Task :app:mergeLibDexDebug
+2025-06-14T17:41:43.8486538Z > Task :app:processDebugResources
+2025-06-14T17:41:44.1516117Z > Task :app:validateSigningDebug
+2025-06-14T17:41:45.2497431Z > Task :app:writeDebugAppMetadata
+2025-06-14T17:41:45.3492345Z > Task :app:writeDebugSigningConfigVersions
+2025-06-14T17:41:45.3497100Z > Task :app:preReleaseBuild UP-TO-DATE
+2025-06-14T17:41:45.3501306Z > Task :app:mergeReleaseJniLibFolders
+2025-06-14T17:41:45.3506019Z > Task :app:mergeReleaseNativeLibs NO-SOURCE
+2025-06-14T17:41:45.3506884Z > Task :app:stripReleaseDebugSymbols NO-SOURCE
+2025-06-14T17:41:45.3507666Z > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+2025-06-14T17:41:45.3509049Z > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+2025-06-14T17:41:45.4526099Z > Task :app:checkReleaseDuplicateClasses
+2025-06-14T17:41:45.5513853Z > Task :app:buildKotlinToolingMetadata
+2025-06-14T17:41:45.5551621Z > Task :app:checkReleaseAarMetadata
+2025-06-14T17:41:45.5552269Z > Task :app:generateReleaseResValues
+2025-06-14T17:41:45.5552840Z > Task :app:mapReleaseSourceSetPaths
+2025-06-14T17:41:45.5554029Z > Task :app:generateReleaseResources
+2025-06-14T17:41:46.9500072Z > Task :app:packageReleaseResources
+2025-06-14T17:41:47.7506311Z > Task :app:parseReleaseLocalResources
+2025-06-14T17:41:47.7507235Z > Task :app:createReleaseCompatibleScreenManifests
+2025-06-14T17:41:47.7508047Z > Task :app:extractDeepLinksRelease
+2025-06-14T17:41:47.8560518Z > Task :app:mergeReleaseResources
+2025-06-14T17:41:47.9513866Z > Task :app:processReleaseMainManifest
+2025-06-14T17:41:47.9518163Z > Task :app:processReleaseManifest
+2025-06-14T17:41:47.9522066Z > Task :app:processReleaseManifestForPackage
+2025-06-14T17:41:48.0500268Z > Task :app:javaPreCompileRelease
+2025-06-14T17:41:48.0555858Z > Task :app:desugarReleaseFileDependencies
+2025-06-14T17:41:48.0556423Z > Task :app:mergeReleaseStartupProfile
+2025-06-14T17:41:49.4488402Z > Task :app:processReleaseResources
+2025-06-14T17:41:50.5509075Z > Task :app:mergeExtDexDebug
+2025-06-14T17:41:52.7489786Z > Task :app:mergeReleaseArtProfile
+2025-06-14T17:41:52.7490884Z > Task :app:mergeReleaseShaders
+2025-06-14T17:41:52.7491685Z > Task :app:compileReleaseShaders NO-SOURCE
+2025-06-14T17:41:52.7492482Z > Task :app:generateReleaseAssets UP-TO-DATE
+2025-06-14T17:41:52.7493204Z > Task :app:mergeReleaseAssets
+2025-06-14T17:41:52.8529748Z > Task :app:compressReleaseAssets
+2025-06-14T17:41:52.8530831Z > Task :app:mergeExtDexRelease
+2025-06-14T17:41:52.9528786Z > Task :app:extractReleaseVersionControlInfo
+2025-06-14T17:41:52.9575746Z > Task :app:extractProguardFiles
+2025-06-14T17:41:53.1487579Z > Task :app:collectReleaseDependencies
+2025-06-14T17:41:53.3486486Z > Task :app:sdkReleaseDependencyData
+2025-06-14T17:41:53.3487063Z > Task :app:writeReleaseAppMetadata
+2025-06-14T17:41:53.3487894Z > Task :app:writeReleaseSigningConfigVersions
+2025-06-14T17:41:53.3492657Z > Task :app:preDebugAndroidTestBuild SKIPPED
+2025-06-14T17:41:53.3493767Z > Task :app:generateDebugAndroidTestResValues
+2025-06-14T17:41:53.3494723Z > Task :app:preDebugUnitTestBuild UP-TO-DATE
+2025-06-14T17:41:53.3495796Z > Task :app:javaPreCompileDebugUnitTest
+2025-06-14T17:41:53.3555601Z > Task :app:preReleaseUnitTestBuild UP-TO-DATE
+2025-06-14T17:41:53.3556138Z > Task :app:javaPreCompileReleaseUnitTest
+2025-06-14T17:41:53.3575490Z > Task :app:optimizeReleaseResources
+2025-06-14T17:41:53.9531491Z 
+2025-06-14T17:41:53.9537040Z > Task :app:compileReleaseKotlin FAILED
+2025-06-14T17:41:53.9543954Z 
+2025-06-14T17:41:53.9565601Z > Task :app:compileDebugKotlin FAILED
+2025-06-14T17:41:53.9570431Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:6:16 Unresolved reference 'android'.
+2025-06-14T17:41:53.9575872Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:19:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9581169Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:20:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9586704Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:22:9 Unresolved reference 'buttonAdd'.
+2025-06-14T17:41:53.9589052Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:23:24 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9594282Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:27:17 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9596298Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:6:16 Unresolved reference 'android'.
+2025-06-14T17:41:53.9601494Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:19:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9636342Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:20:9 Unresolved reference 'recyclerViewTasks'.
+2025-06-14T17:41:53.9638869Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:22:9 Unresolved reference 'buttonAdd'.
+2025-06-14T17:41:53.9654281Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:23:24 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9668729Z e: file:///home/runner/work/gh/gh/app/src/main/java/com/example/android_basic/MainActivity.kt:27:17 Unresolved reference 'editTextTask'.
+2025-06-14T17:41:53.9669677Z 
+2025-06-14T17:41:53.9669847Z FAILURE: Build completed with 2 failures.
+2025-06-14T17:41:53.9670151Z 
+2025-06-14T17:41:53.9670304Z 1: Task failed with an exception.
+2025-06-14T17:41:53.9670670Z -----------
+2025-06-14T17:41:53.9670947Z * What went wrong:
+2025-06-14T17:41:53.9671367Z Execution failed for task ':app:compileReleaseKotlin'.
+2025-06-14T17:41:53.9672539Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2025-06-14T17:41:53.9673696Z    > Compilation error. See log for more details
+2025-06-14T17:41:53.9674039Z 
+2025-06-14T17:41:53.9674162Z * Try:
+2025-06-14T17:41:53.9674542Z > Run with --stacktrace option to get the stack trace.
+2025-06-14T17:41:53.9675330Z > Run with --info or --debug option to get more log output.
+2025-06-14T17:41:54.0500679Z > Run with --scan to get full insights.
+2025-06-14T17:41:54.0572543Z > Get more help at https://help.gradle.org.
+2025-06-14T17:41:54.0573108Z ==============================================================================
+2025-06-14T17:41:54.0573463Z 
+2025-06-14T17:41:54.0573621Z 2: Task failed with an exception.
+2025-06-14T17:41:54.0574022Z -----------
+2025-06-14T17:41:54.0574318Z * What went wrong:
+2025-06-14T17:41:54.0574740Z Execution failed for task ':app:compileDebugKotlin'.
+2025-06-14T17:41:54.0579700Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2025-06-14T17:41:54.0580831Z    > Compilation error. See log for more details
+2025-06-14T17:41:54.0581166Z 
+2025-06-14T17:41:54.0581279Z * Try:
+2025-06-14T17:41:54.0581667Z > Run with --stacktrace option to get the stack trace.
+2025-06-14T17:41:54.0582257Z > Run with --info or --debug option to get more log output.
+2025-06-14T17:41:54.0582798Z > Run with --scan to get full insights.
+2025-06-14T17:41:54.0583272Z > Get more help at https://help.gradle.org.
+2025-06-14T17:41:54.0583857Z ==============================================================================
+2025-06-14T17:41:54.0584183Z 
+2025-06-14T17:41:54.0584311Z BUILD FAILED in 33s
+2025-06-14T17:41:54.0584682Z 61 actionable tasks: 61 executed
+2025-06-14T17:41:54.5762311Z ##[error]Process completed with exit code 1.
+2025-06-14T17:41:54.5867387Z Post job cleanup.
+2025-06-14T17:41:54.7572262Z Post job cleanup.
+2025-06-14T17:41:54.8281125Z [command]/usr/bin/git version
+2025-06-14T17:41:54.8319319Z git version 2.49.0
+2025-06-14T17:41:54.8361649Z Temporarily overriding HOME='/home/runner/work/_temp/92c45baf-a8f4-4146-a89d-08a913debcbb' before making global git config changes
+2025-06-14T17:41:54.8363828Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-14T17:41:54.8366277Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh/gh
+2025-06-14T17:41:54.8398183Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-14T17:41:54.8428225Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-14T17:41:54.8664298Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-14T17:41:54.8685680Z http.https://github.com/.extraheader
+2025-06-14T17:41:54.8697297Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-06-14T17:41:54.8728076Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-14T17:41:54.9057748Z Cleaning up orphan processes
+2025-06-14T17:41:54.9387806Z Terminate orphan process: pid (2110) (java)
+2025-06-14T17:41:54.9415026Z Terminate orphan process: pid (2236) (java)
