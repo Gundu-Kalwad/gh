@@ -1,3 +1,0 @@
-2025-06-14T17:41:54.9057736Z Cleaning up orphan processes
-2025-06-14T17:41:54.9387793Z Terminate orphan process: pid (2110) (java)
-2025-06-14T17:41:54.9415013Z Terminate orphan process: pid (2236) (java)
