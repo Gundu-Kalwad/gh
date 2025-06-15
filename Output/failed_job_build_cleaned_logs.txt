@@ -1,0 +1,20 @@
+[36;1mflutter build apk --release[0m
+lib/main.dart:8:4: Error: Expected ';' after this.
+lib/main.dart:8:10: Error: Expected ';' after this.
+lib/main.dart:8:14: Error: Expected ';' after this.
+lib/main.dart:8:1: Error: Type 'hf' not found.
+lib/main.dart:8:7: Error: Type 'jy' not found.
+lib/main.dart:8:12: Error: Type 'y' not found.
+lib/main.dart:8:1: Error: 'hf' isn't a type.
+lib/main.dart:8:7: Error: 'jy' isn't a type.
+lib/main.dart:8:12: Error: 'y' isn't a type.
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 4m 25s
+##[error]Process completed with exit code 1.
