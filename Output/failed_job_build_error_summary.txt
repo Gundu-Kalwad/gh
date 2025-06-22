@@ -1,10 +1,18 @@
 🔍 **PROJECT TYPE:** Android/Kotlin
 
+❌ **COMPILATION ERRORS:**
+
+📁 **MainActivity.kt:**
+  • Line Unknown: 6:16 Unresolved reference 'android'.
+  • Line Unknown: 19:9 Unresolved reference 'recyclerViewTasks'.
+  • Line Unknown: 20:9 Unresolved reference 'recyclerViewTasks'.
+  • ... and 9 more errors
 
 🚨 **BUILD ERRORS:**
-  • FAILURE: Build failed with an exception.
-  • BUILD FAILED in 4m 25s
-  • ##[error]Process completed with exit code 1.
+  • > Task :app:compileReleaseKotlin FAILED
+  • > Task :app:compileDebugKotlin FAILED
+  • FAILURE: Build completed with 2 failures.
+  • ... and 2 more errors
 
 💡 **SUGGESTED FIXES:**
   • Clean & Rebuild Project
