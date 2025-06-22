@@ -1,36 +1,39 @@
-// MainActivity.kt
-// This is the main entry point for your Android app's UI.
-// It displays the "Hello World!" screen and handles window insets for modern edge-to-edge layouts.
+package com.example.todoapp
 
-package com.yourcompany.yourapp
-
-// Import essential Android and Jetpack libraries
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge // For drawing behind system bars
-import androidx.appcompat.app.AppCompatActivity // Base class for activities using the support library action bar features
-import androidx.core.view.ViewCompat // For window inset listener
-import androidx.core.view.WindowInsetsCompat // For handling system window insets
+import android.widget.Button
+import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// MainActivity is the main screen shown when the app launches
 class MainActivity : AppCompatActivity() {
-    // onCreate is called when the activity is first created
+    private lateinit var taskAdapter: TaskAdapter
+    private val taskList = mutableListOf<Task>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState) // Always call the superclass first
-
-        // Enable edge-to-edge display (draw behind status/navigation bars)
-        enableEdgeToEdge()
-
-        // Set the layout for this activity. The layout file is located at res/layout/activity_main.xml
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Apply window insets (padding) to the root view so content isn't hidden by system bars
-        // This is important for modern Android design
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            // Get the size of system bars (status bar, navigation bar, etc.)
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            // Set padding so content is not overlapped by system bars
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets // Return the insets object
+        val taskInput = findViewById<EditText>(R.id.taskInput)
+        val addButton = findViewById<Button>(R.id.addButton)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        taskAdapter = TaskAdapter(taskList) { position ->
+            taskList.removeAt(position)
+            taskAdapter.notifyItemRemoved(position)
+        }
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = taskAdapter
+
+        addButton.setOnClickListener {
+            val taskText = taskInput.text.toString()
+            if (taskText.isNotBlank()) {
+                taskList.add(Task(taskText))
+                taskAdapter.notifyItemInserted(taskList.size - 1)
+                taskInput.text.clear()
+            }
         }
     }
 }

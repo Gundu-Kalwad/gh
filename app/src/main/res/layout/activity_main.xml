@@ -1,46 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    activity_main.xml
-    This layout file defines the main UI for the Hello World app.
-    It uses ConstraintLayout for flexible positioning and MaterialCardView for a modern look.
-    All elements are commented for template/educational purposes.
--->
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:padding="16dp"
+    android:orientation="vertical">
 
-    <!-- MaterialCardView provides elevation (shadow), rounded corners, and a modern Material Design look for the "Hello World" message. -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/hello_card"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/hello_card_bg"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="24dp">
+        android:hint="Enter a task" />
 
-        <!-- TextView displays the actual "Hello World!" message. -->
-        <TextView
-            android:id="@+id/hello_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="32dp"
-            android:text="Hello World!"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_marginTop="8dp" />
 
-    </com.google.android.material.card.MaterialCardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
