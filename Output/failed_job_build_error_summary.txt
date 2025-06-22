@@ -1,0 +1,21 @@
+🔍 **PROJECT TYPE:** Android/Kotlin
+
+❌ **COMPILATION ERRORS:**
+
+📁 **MainActivity.kt:**
+  • Line Unknown: 24:24 Unresolved reference 'R'.
+  • Line Unknown: 28:64 Unresolved reference 'R'.
+  • Line Unknown: 24:24 Unresolved reference 'R'.
+  • ... and 1 more errors
+
+🚨 **BUILD ERRORS:**
+  • > Task :app:compileReleaseKotlin FAILED
+  • > Task :app:compileDebugKotlin FAILED
+  • FAILURE: Build completed with 2 failures.
+  • ... and 2 more errors
+
+💡 **SUGGESTED FIXES:**
+  • Clean & Rebuild Project
+  • Check import statements
+  • Verify layout file exists
+  • Sync Gradle files
