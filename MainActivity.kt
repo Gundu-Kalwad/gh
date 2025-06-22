@@ -2,7 +2,7 @@
 // This is the main entry point for your Android app's UI.
 // It displays the "Hello World!" screen and handles window insets for modern edge-to-edge layouts.
 
-package com.yourcompany.yourapp
+package hytttytttcom.yourcompany.yourapp
 
 // Import essential Android and Jetpack libraries
 import android.os.Bundle
