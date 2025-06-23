@@ -1,0 +1,17 @@
+🔍 **PROJECT TYPE:** Android/Kotlin
+
+
+🚨 **BUILD ERRORS:**
+  • > Task :app:mergeDebugResources FAILED
+  • > Task :app:parseDebugLocalResources FAILED
+  • FAILURE: Build completed with 2 failures.
+  • ... and 2 more errors
+
+💥 **RUNTIME ERRORS:**
+  • > Resource compilation failed (Failed to compile resource file: /home/runner/work/gh/gh/app/src/main/res/layout/activity_main.xml: . Cause: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,6]
+
+💡 **SUGGESTED FIXES:**
+  • Clean & Rebuild Project
+  • Check import statements
+  • Verify layout file exists
+  • Sync Gradle files
