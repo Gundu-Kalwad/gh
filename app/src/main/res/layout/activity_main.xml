@@ -1,29 +1,46 @@
-<!-- res/layout/activity_main.xml -->
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
+<!--
+    activity_main.xml
+    This layout file defines the main UI for the Hello World app.
+    It uses ConstraintLayout for flexible positioning and MaterialCardView for a modern look.
+    All elements are commented for template/educational purposes.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
-    <EditText
-        android:id="@+id/taskInput"
-        android:layout_width="match_parent"
+    <!-- MaterialCardView provides elevation (shadow), rounded corners, and a modern Material Design look for the "Hello World" message. -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hello_card"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter task"
-        android:inputType="text"/>
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/hello_card_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp">
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Task"
-        android:layout_marginTop="8dp"/>
+        <!-- TextView displays the actual "Hello World!" message. -->
+        <TextView
+            android:id="@+id/hello_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="Hello World!"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/taskListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
-</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
