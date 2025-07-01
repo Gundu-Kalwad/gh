@@ -1,24 +1,16 @@
-# Android Basic Template
+# image
 
-This is a basic Android template project for a great start on any new Android app. It includes:
+A new Flutter project.
 
-- Clean Gradle setup (Kotlin DSL)
-- Latest AndroidX, Material, and Kotlin dependencies
-- Example MainActivity and test classes
-- Minimal, modern themes and resources
+## Getting Started
 
-## How to use
+This project is a starting point for a Flutter application.
 
-1. Clone or copy this template.
-2. Rename the package from `com.yourcompany.yourapp` to your desired package name (use IDE refactor or search/replace).
-3. Update `app_name` in `app/src/main/res/values/strings.xml`.
-4. Update icons and resources as needed.
-5. Start building your app!
+A few resources to get you started if this is your first Flutter project:
 
-## Requirements
-- Android Studio (latest recommended)
-- JDK 11 or newer
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
----
-
-Happy coding!
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
