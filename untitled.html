@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malloc vs calloc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 40px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">malloc vs calloc</h1>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>malloc</th>
+            <th>calloc</th>
+        </tr>
+        <tr>
+            <td>Purpose</td>
+            <td>Allocates a single block of memory</td>
+            <td>Allocates multiple blocks of memory and initializes to zero</td>
+        </tr>
+        <tr>
+            <td>Syntax</td>
+            <td><code>void *malloc(size_t size);</code></td>
+            <td><code>void *calloc(size_t num, size_t size);</code></td>
+        </tr>
+        <tr>
+            <td>Initialization</td>
+            <td>Does not initialize memory (garbage values)</td>
+            <td>Initializes memory to zero</td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Suitable for single block allocation</td>
+            <td>Suitable for array or structure allocation with initialization</td>
+        </tr>
+        <tr>
+            <td>Arguments</td>
+            <td>Takes one argument (size)</td>
+            <td>Takes two arguments (num, size)</td>
+        </tr>
+        <tr>
+            <td>Example</td>
+            <td><code>int *ptr = (int *)malloc(sizeof(int));</code></td>
+            <td><code>int *arr = (int *)calloc(5, sizeof(int));</code></td>
+        </tr>
+    </table>
+</body>
+</html>
