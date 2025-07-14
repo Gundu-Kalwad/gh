@@ -1,4 +1,4 @@
-package com.pmk.login
+package com.yourcompany.yourapp
 
 import org.junit.Test
 
