@@ -6,13 +6,13 @@
   • Line Unknown: 5:1 Syntax error: Expecting a top level declaration.
   • Line Unknown: 5:11 Syntax error: Expecting a top level declaration.
   • Line Unknown: 5:14 Syntax error: Expecting a top level declaration.
-  • ... and 6 more errors
+  • ... and 15 more errors
 
 🚨 **BUILD ERRORS:**
+  • > Task :app:compileReleaseKotlin FAILED
   • > Task :app:compileDebugKotlin FAILED
-  • FAILURE: Build failed with an exception.
-  • BUILD FAILED in 2m 34s
-  • ... and 1 more errors
+  • FAILURE: Build completed with 2 failures.
+  • ... and 2 more errors
 
 💡 **SUGGESTED FIXES:**
   • Clean & Rebuild Project
