@@ -1,0 +1,119 @@
+### pub.dev
+[Searching for packages](https://pub.dev/help/search)
+[Package scoring and pub points](https://pub.dev/help/scoring)
+
+### Flutter
+[Using packages](https://flutter.dev/using-packages/)
+[Developing packages and plugins](https://flutter.dev/developing-packages/)
+[Publishing a package](https://dart.dev/tools/pub/publishing)
+
+### Dart
+[Using packages](https://dart.dev/guides/packages)
+[Publishing a package](https://dart.dev/tools/pub/publishing)
+
+### pub.dev
+[Searching for packages](https://pub.dev/help/search)
+[Package scoring and pub points](https://pub.dev/help/scoring)
+
+### Flutter
+[Using packages](https://flutter.dev/using-packages/)
+[Developing packages and plugins](https://flutter.dev/developing-packages/)
+[Publishing a package](https://dart.dev/tools/pub/publishing)
+
+### Dart
+[Using packages](https://dart.dev/guides/packages)
+[Publishing a package](https://dart.dev/tools/pub/publishing)
+
+# docx_to_text 1.0.1 docx_to_text: ^1.0.1 copied to clipboard
+
+[24 months ago](https://pub.dev/packages/docx_to_text)
+[Dart](https://pub.dev/packages?q=sdk%3Adart)
+[Flutter](https://pub.dev/packages?q=sdk%3Aflutter)
+[Android](https://pub.dev/packages?q=platform%3Aandroid)
+[iOS](https://pub.dev/packages?q=platform%3Aios)
+[Linux](https://pub.dev/packages?q=platform%3Alinux)
+[macOS](https://pub.dev/packages?q=platform%3Amacos)
+[web](https://pub.dev/packages?q=platform%3Aweb)
+[Windows](https://pub.dev/packages?q=platform%3Awindows)
+
+### Metadata
+
+A small Dart package for converting docx files (Microsoft Word) to string.
+[More...](https://pub.dev/packages/docx_to_text)
+- Readme
+- [Changelog](https://pub.dev/packages/docx_to_text/changelog)
+- [Example](https://pub.dev/packages/docx_to_text/example)
+- [Installing](https://pub.dev/packages/docx_to_text/install)
+- [Versions](https://pub.dev/packages/docx_to_text/versions)
+- [Scores](https://pub.dev/packages/docx_to_text/score)
+[Changelog](https://pub.dev/packages/docx_to_text/changelog)
+[Example](https://pub.dev/packages/docx_to_text/example)
+[Installing](https://pub.dev/packages/docx_to_text/install)
+[Versions](https://pub.dev/packages/docx_to_text/versions)
+[Scores](https://pub.dev/packages/docx_to_text/score)
+This is a small package that allows you to retrieve text (text only) from .docx files (Microsoft Word).
+Thanks [SnowLukin](https://github.com/SnowLukin)
+
+# 
+```
+import 'package:docx_to_text/docx_to_text.dart'; final file = File('path/to/file.docx'); final bytes = await file.readAsBytes(); final text = docxToText(bytes);
+```
+
+
+```
+import 'package:docx_to_text/docx_to_text.dart'; final file = File('path/to/file.docx'); final bytes = await file.readAsBytes(); final text = docxToText(bytes);
+```
+
+# 
+If there is anything you want to improve or fix, pool requesters are welcome.
+[23likes150points2.6kdownloads](https://pub.dev/packages/docx_to_text/score)
+
+### Publisher
+unverified uploader
+
+### Metadata
+A small Dart package for converting docx files (Microsoft Word) to string.
+Homepage[Repository (GitHub)](https://github.com/StarProxima/docx_to_text)
+
+### Documentation
+[API reference](https://pub.dev/documentation/docx_to_text/latest/)
+
+### License
+MIT ([license](https://pub.dev/packages/docx_to_text/license))
+
+### Dependencies
+archive, [xml](https://pub.dev/packages/xml)
+
+### More
+[Packages that depend on docx_to_text](https://pub.dev/packages?q=dependency%3Adocx_to_text)
+
+### ← Metadata
+[23likes150points2.6kdownloads](https://pub.dev/packages/docx_to_text/score)
+
+### Publisher
+unverified uploader
+
+### Metadata
+A small Dart package for converting docx files (Microsoft Word) to string.
+Homepage[Repository (GitHub)](https://github.com/StarProxima/docx_to_text)
+
+### Documentation
+[API reference](https://pub.dev/documentation/docx_to_text/latest/)
+
+### License
+MIT ([license](https://pub.dev/packages/docx_to_text/license))
+
+### Dependencies
+archive, [xml](https://pub.dev/packages/xml)
+
+### More
+[Packages that depend on docx_to_text](https://pub.dev/packages?q=dependency%3Adocx_to_text)
+[Back](https://pub.dev/packages/docx_to_text)
+[Dart language](https://dart.dev/)
+[Report package](https://pub.dev/report?subject=package%3Adocx_to_text&url=https%3A%2F%2Fpub.dev%2Fpackages%2Fdocx_to_text)
+[Policy](https://pub.dev/policy)
+[Terms](https://www.google.com/intl/en/policies/terms/)
+[API Terms](https://developers.google.com/terms/)
+[Security](https://pub.dev/security)
+[Privacy](https://www.google.com/intl/en/policies/privacy/)
+[Help](https://pub.dev/help)

@@ -1,0 +1,79 @@
+android {
+    // Enable advanced optimizations
+    buildTypes {
+        release {
+            // Enable R8 full mode for maximum optimization
+            isR8FullMode = true
+            
+            // Enable code shrinking
+            isShrinkCode = true
+            
+            // Enable resource shrinking
+            isShrinkResources = true
+            
+            // Enable tree shaking
+            isTreeShakingEnabled = true
+            
+            // Enable modern dexing
+            isUseModernDexing = true
+            
+            // Enable multidex
+            multiDexEnabled = true
+            
+            // Enable splits
+            splits {
+                // Enable ABI splits
+                abi {
+                    enable = true
+                    reset()
+                    include "armeabi-v7a", "arm64-v8a"
+                    universalApk = false
+                }
+                
+                // Enable density splits
+                density {
+                    enable = true
+                    reset()
+                    include "mdpi", "hdpi", "xhdpi"
+                    universalApk = false
+                }
+            }
+            
+            // Enable ProGuard
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            
+            // Enable code shrinking
+            minifyEnabled true
+            
+            // Enable resource shrinking
+            shrinkResources true
+            
+            // Enable obfuscation
+            isObfuscate = true
+            
+            // Enable dex optimization
+            isOptimizeDex = true
+            
+            // Enable native code shrinking
+            isShrinkNativeCode = true
+            
+            // Enable PNG crunching
+            isCrunchPngs = true
+            
+            // Enable vector drawable optimization
+            vectorDrawables.useSupportLibrary = true
+            
+            // Enable font optimization
+            fontOptimizationEnabled = true
+            
+            // Enable native library stripping
+            nativeLibs.stripNativeLibs = true
+            
+            // Enable native library compression
+            nativeLibs.compressNativeLibs = true
+            
+            // Enable native library optimization
+            nativeLibs.optimizeNativeLibs = true
+        }
+    }
+}

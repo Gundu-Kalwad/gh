@@ -1,0 +1,2 @@
+D:/shakti_anna/hello_pdf/android/app/.cxx/Debug/596t1b4i/x86/CMakeFiles/edit_cache.dir
+D:/shakti_anna/hello_pdf/android/app/.cxx/Debug/596t1b4i/x86/CMakeFiles/rebuild_cache.dir
