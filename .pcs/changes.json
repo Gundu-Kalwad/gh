@@ -1,9 +1,13 @@
 {
-  "created": [],
-  "modified": [
-    "content://com.android.externalstorage.documents/tree/primary:test/basic-template/document/primary:test/basic-template/app/build.gradle.kts"
+  "created": [
+    "content://com.android.externalstorage.documents/tree/primary:Test (1)/basic-template/document/primary:Test (1)/basic-template/hi.txt"
   ],
-  "deleted": [],
-  "total_changes": 1,
-  "last_updated": "2025-07-23T19:56:31.452533"
+  "modified": [
+    "content://com.android.externalstorage.documents/tree/primary:Test (1)/basic-template/document/primary:Test (1)/basic-template/app/src/main/java/com/example/android_basic/MainActivity.kt"
+  ],
+  "deleted": [
+    "content://com.android.externalstorage.documents/tree/primary:Test (1)/basic-template/document/primary:Test (1)/basic-template/README.md"
+  ],
+  "total_changes": 3,
+  "last_updated": "2025-07-23T22:22:45.972562"
 }

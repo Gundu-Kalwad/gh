@@ -1,8 +1,9 @@
 // MainActivity.kt
 // This is the main entry point for your Android app's UI.
-// It displays the "Hello World!" screen and handles window insets for modern edge-to-edge layout
+// It displays the "Hello World!" screen and handles window insets for modern edge-to-edge layouts.
+//jdj
 package com.yourcompany.yourapp
-//l
+
 // Import essential Android and Jetpack libraries
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge // For drawing behind system bars
