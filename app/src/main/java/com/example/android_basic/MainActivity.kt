@@ -3,7 +3,7 @@
 // It displays the "Hello World!" screen and handles window insets for modern edge-to-edge layouts.
 //jdj
 package com.yourcompany.yourapp
-
+////65577
 // Import essential Android and Jetpack libraries
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge // For drawing behind system bars
