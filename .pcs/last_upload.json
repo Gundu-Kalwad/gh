@@ -1,9 +1,9 @@
 {
-  "repository_name": "hg",
+  "repository_name": "gh",
   "last_commit_hash": "unknown",
-  "last_upload_time": "2025-07-23T18:58:21.118021",
+  "last_upload_time": "2025-07-23T19:38:17.477820",
   "upload_details": {
-    "files_uploaded": 40,
+    "files_uploaded": 38,
     "upload_method": "git_data_api",
     "file_list": [
       ".github/workflows/android.yml",
@@ -43,16 +43,15 @@
       "gradle.properties",
       "gradlew",
       "gradlew.bat",
-      "jej.txt",
       "settings.gradle.kts"
     ],
     "repository_info": {
-      "id": 1024347134,
-      "full_name": "Gundu-Kalwad/hg",
-      "html_url": "https://github.com/Gundu-Kalwad/hg",
+      "id": 1024942284,
+      "full_name": "Gundu-Kalwad/gh",
+      "html_url": "https://github.com/Gundu-Kalwad/gh",
       "private": false
     }
   },
   "app_version": "1.0.0",
-  "created_at": "2025-07-23T18:58:22.431709"
+  "created_at": "2025-07-23T19:38:17.480198"
 }
